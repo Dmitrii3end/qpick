@@ -1,0 +1,106 @@
+.card{
+    position: relative;
+    padding: 18px 18px 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    border-radius: 30px;
+}
+
+.card__info{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.card__img{
+    width: 146px;
+    height: 136px;
+}
+
+.card__description{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card__name{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20.72px;
+    color: #1C1C27;
+}
+
+.card__cost{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18.29px;
+    color: #AAAAAA;
+}
+
+.card__basket{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__counter{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.counter__minus, .counter__plus{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFCE7F;
+}
+
+.counter__minus::before, .counter__plus::before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 7px);
+    background-color: #FFFFFF;
+}
+
+.counter__plus::after{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    position: absolute;
+    top: calc(50% - 7px);
+    left: calc(50% - 1px);
+    background-color: #FFFFFF;
+}
+
+.counter__count{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20.72px;
+}
+
+.counter__result{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18.29px;
+}
+
+.card__delete{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/icons/delete.svg');
+    transition: transform 0.2s;
+}
+
+.card__delete:hover{
+    transform: scale(1.2);
+}
